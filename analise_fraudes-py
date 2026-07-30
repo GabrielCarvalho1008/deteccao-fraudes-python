@@ -1,0 +1,12 @@
+# PROJETO DE DETECÇÃO DE FRAUDES
+# ANALISE INICIAL DE TRANSAÇÕES
+
+TRANSACOES = [100, 250, 80, 5000, 120, 75, 8000]
+
+LIMITE = 1000
+
+for valor in TRANSACOES:
+    if valor > LIMITE:
+        print(f"possivel fraude: R$ {valor}")
+    else:
+        print(f"transação normal: R$ {valor}")
